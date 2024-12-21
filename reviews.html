@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Read reviews of Hangry Restaurant and share your feedback.">
+    <meta name="keywords" content="Hangry, Reviews, Feedback, Customer Opinions">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangry - Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        .review {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .review h3 {
+            margin: 0 0 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reviews">
+            <h1>Customer Reviews</h1>
+
+            <div class="review">
+    <h2>Leave a Review</h2>
+            <form action="/submit-review" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" placeholder="Write your review here..." rows="5" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>                
+
+<h3>Sandra Lynch</h3>
+                <p>Food was amazing and the service was great! The "Live to Fry Another Day" breakfast was exactly what I needed. Will definitely be back!</p>
+            </div>
+
+            <div class="review">
+                <h3>John McCarthy</h3>
+                <p>The atmosphere was fantastic, and the staff were really friendly. Would highly recommend the "Berry Good Vibes" acai bowl !</p>
+            </div>
+
+            <div class="review">
+                <h3>Cristina Payne</h3>
+                <p>"Curry to the Rescue" was absolutely delicious. Not too spicy or too rich with plenty of flavour.</p>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hangry Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
